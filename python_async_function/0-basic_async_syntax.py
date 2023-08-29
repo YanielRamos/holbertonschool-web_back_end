@@ -5,8 +5,9 @@ import random
 
 
 @asyncio.coroutine
-async def wait_random(max_delay=10):
-    """selectnumber a random """
-    delay = float(random.uniform(0, max_delay))
+async def wait_random(max_delay: int = 10) -> float:
+    """function that takes a random float using async"""
+
+    delay: float = random.uniform(0, max_delay)
     await asyncio.sleep(delay)
     return delay

@@ -1,6 +1,5 @@
 #!/usr/bin/env python3
 """Script that return the list of all the delays (float values)"""
-import random
 import asyncio
 from typing import List
 
@@ -12,7 +11,7 @@ async def task_wait_n(n: int, max_delay: int) -> List[float]:
     """function that return a list of float in ascending order"""
     delay_list: List[float] = []
     tasks: List = []
-    
+
     for _ in range(n):
         tasks.append(task_wait_random(max_delay))
 

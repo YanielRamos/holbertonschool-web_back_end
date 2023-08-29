@@ -6,4 +6,5 @@ wait_random = __import__('0-basic_async_syntax').wait_random
 
 def task_wait_random(max_delay: int):
     """function"""
-    return asyncio.Task(wait_random(max_delay))
+    cls_type = asyncio.Task(wait_random(max_delay))
+    return cls_type

@@ -1,9 +1,8 @@
 #!/usr/bin/env python3
 """Script that have a coroutine that
 returns 10 random numbers"""
-import random
-import asyncio
 from typing import List
+import asyncio
 async_generator = __import__('0-async_generator').async_generator
 
 

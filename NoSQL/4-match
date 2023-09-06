@@ -1,0 +1,2 @@
+// Lsit all doc with HB School on school
+db.school.find({name: "Holberton school"})

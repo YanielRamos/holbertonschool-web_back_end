@@ -40,7 +40,7 @@ class Server:
         start_size: int = end_size - page_size
 
         return (start_size, end_size)
-    
+
     def get_hyper(self, page: int = 1, page_size: int = 10) -> Dict:
         """Function that """
 

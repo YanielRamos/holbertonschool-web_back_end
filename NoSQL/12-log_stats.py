@@ -9,7 +9,7 @@ if __name__ == "__main__":
     db_nginx = client.logs.nginx
     methods = ["GET", "POST", "PUT", "PATCH", "DELETE"]
 
-    count_logs = db_nginx.count_documents({})
+    count_logs = db_nginx.count_documents()
     print(f'{count_logs} logs')
 
     print('Methods:')
@@ -22,4 +22,3 @@ if __name__ == "__main__":
     )
 
     print(f'{check} status check')
-    

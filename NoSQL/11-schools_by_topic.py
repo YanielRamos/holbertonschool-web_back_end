@@ -3,7 +3,7 @@
 import pymongo
 
 
-def schools_by_topic(mongo_collection, topic) -> list:
+def schools_by_topic(mongo_collection, topic: str) -> list:
     """function that return a list of schools"""
     schools: list = []
     query = {"topics": topic}

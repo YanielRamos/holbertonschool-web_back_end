@@ -28,7 +28,6 @@ class Server:
         assert isinstance(page, int) and page > 0
         assert isinstance(page_size, int) and page_size > 0
 
-        print(page, page_size)
         range: Tuple = self.index_range(page, page_size)
         pagination: List = self.dataset()
 

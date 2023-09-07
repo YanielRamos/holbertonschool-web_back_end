@@ -33,7 +33,7 @@ class Server:
         pagination: List = self.dataset()
 
         return (pagination[range[0]:range[1]])
-    
+
     def index_range(self, page: int, page_size: int) -> Tuple[int, int]:
         """function that calculates the start and end"""
         end_size: int = page * page_size

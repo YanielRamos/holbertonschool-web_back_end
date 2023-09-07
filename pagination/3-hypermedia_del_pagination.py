@@ -72,5 +72,5 @@ class Server:
             'next_index': next_index,
             'page_size': len(result_dataset),
             'data': result_dataset}
-        
+
         return hyper_dict

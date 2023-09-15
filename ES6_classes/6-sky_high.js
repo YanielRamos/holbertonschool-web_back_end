@@ -1,20 +1,28 @@
+// Extend Buildinf
 import Building from './5-building';
 
-export default class SkyHighBuilding extends Building {
+/**
+ * Define Class
+ *
+ * @class SkyHighBuilding
+ */
+class SkyHighBuilding extends Building {
   constructor(sqft, floors) {
     super(sqft);
     this._floors = floors;
   }
-
+  
   get sqft() {
     return this._sqft;
   }
 
   get floors() {
-    return this._floors;
+    return (this._floors);
   }
 
   evacuationWarningMessage() {
-    return `Evacuate slowly the ${this.floors} floors`;
+    return (`Evacuate slowly the ${this.floors} floors`);
   }
 }
+
+export default SkyHighBuilding;
